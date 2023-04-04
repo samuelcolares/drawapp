@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draw.io</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <canvas class="canvas" id="canvas" height="800px" width="800px" style="background: slategray;"></canvas>
+    <div class="toolbox">
+        <button class="btn" id="decrease"><i class="fa-solid fa-minus"></i></button>
+        <span class="size" id="size" contenteditable="true">20</span>
+        <button class="btn" id="increase"><i class="fa-solid fa-plus"></i></button>
+        <div class="pencil"><i class="fas fa-pencil"></i><input type="color" class="color" id="pencilColor"></div>
+        <div class="pencil"><i class="fa-regular fa-square"></i><input type="color" class="color" id="bkColor" value="#708090"></div>
+        <div class="pencil hidden">
+            <i class="fa-regular fa-image"></i>
+            <button class="urlShow">Url</button>
+            <div class="url">
+                <p>Adicione um Background</p>
+                <input type="url" name="" id="bkUrl" placeholder="https://url... Aperte Enter">
+                <button class="backgroundRemover" disabled  >Remover Background</button>
+            </div>
+        </div>
+        <button class="btn" id="clear"><i class="fa-solid fa-eraser"></i></button>
+    </div>
+</body>
+</html>
